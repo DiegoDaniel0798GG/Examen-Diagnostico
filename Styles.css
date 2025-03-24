@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(115deg, rgba(226, 65, 231, 0.8), rgba(255, 108, 243, 0.7)), 
+                url("/img/1.jpg") no-repeat center center;
+    background-size: cover;
+    color: rgb(255, 255, 255); 
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+    padding: 0;
+    font-family: "Caveat", cursive;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+input, button, select, textarea {
+    font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+    font-weight: 500;
+    margin: 0;
+}
+
+.txt-centrado {
+    text-align: center;
+}
+
+.container {
+    margin: 3.1rem auto 0 auto;
+    padding: 1rem;
+}
+
+.formulario {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.campo {
+    margin: 0 auto 1.25rem auto;
+}
+
+.campo__input {
+    display: block;
+    width: 100%;
+    height: 3rem; 
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 0.75rem;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgb(253, 37, 206);
+    outline: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.campo__input:focus {
+    border-color: rgba(255, 108, 243, 0.8);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.campo__checkbox {
+    appearance: none; 
+    width: 1rem; 
+    height: 1rem; 
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block; 
+    vertical-align: middle; 
+    margin-right: 0.5rem; 
+}
+
+.campo__checkbox:checked {
+    background-color: white;
+    border-color: rgba(255, 108, 243, 0.8);
+    box-shadow: 0 0 0.2rem rgba(255, 108, 243, 0.8);
+}
+
+.campo__checkbox:hover {
+    border-color: rgba(255, 108, 243, 0.8);
+}
+
+
+
+h1, p {
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.header__descripcion {
+    font-style: italic;
+    font-weight: 300;
+}
+
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.12rem;
+    margin-bottom: 0.5rem;
+}
+
+.campo__textarea {
+    width: 100%;
+    min-height: 150px;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 0.75rem;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    outline: none;
+    resize: vertical;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.campo__textarea:focus {
+    border-color: rgba(255, 108, 243, 0.8);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.campo_submit {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: rgba(255, 108, 243, 0.8);
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.campo_submit:hover {
+    background-color: rgba(226, 65, 231, 0.8);
+    transform: scale(1.05);
+}
+
+.campo_submit:active {
+    background-color: rgba(180, 50, 200, 0.9);
+    transform: scale(0.95);
+}
+ /** Diseño responsive para que no se vea feito si lo ven desde celular */
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
