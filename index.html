@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Diagnóstico</title>
+    <link rel="stylesheet" href="/Styles.css">
+    <link rel="shortcut icon" href="/img/2.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="txt-centrado">Examen Diagnóstico</h1>
+            <p class="descripcion txt-centrado">Habla con la verdad.</p>
+        </header>
+
+        <form class="formulario" action="/guardar" method="post">
+
+            <div class="campo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" class="campo__input" placeholder="Ingresa tu nombre">
+            </div>
+
+            <div class="campo">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" class="campo__input" placeholder="Ingresa tus apellidos">
+            </div>
+
+            <div class="campo">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" class="campo__input" placeholder="Ingresa tu edad">
+            </div>
+
+            <div class="campo">
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" class="campo__input">
+                    <option selected disabled>Seleccione su sexo:</option>
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                    <option value="prefiero-no-decirlo">Prefiero no decirlo</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="peli-fav">¿Cuál es tu película favorita?</label>
+                <input type="text" id="peli-fav" class="campo__input" placeholder="Ingresa texto">
+            </div>
+
+            <div class="campo">
+                <label for="comida-fav">¿Cuál es tu comida favorita?</label>
+                <input type="text" id="comida-fav" class="campo__input" placeholder="Ingresa texto">
+            </div>
+
+            <div class="campo">
+                <label for="animal-fav">¿Cuál es tu animal favorito?</label>
+                <input type="text" id="animal-fav" class="campo__input" placeholder="Ingresa texto">
+            </div>
+
+            <div class="campo">
+                <label for="ocupacion">Ocupación:</label>
+                <input type="text" id="ocupacion" class="campo__input" placeholder="Ingresa texto">
+            </div>
+
+            <div class="campo">
+                <label for="expectativas">¿Qué esperas de la carrera?</label>
+                <input type="text" id="expectativas" class="campo__input" placeholder="Ingresa texto">
+            </div>
+
+            <div class="campo">
+                <p>¿Estás orgullos@ de mí?</p>
+                <label>
+                    <input type="checkbox" name="respuesta" value="Si" class="campo__checkbox">
+                    Sí
+                </label>
+                <label>
+                    <input type="checkbox" name="respuesta" value="No" class="campo__checkbox">
+                    No
+                </label>
+            </div>
+
+            <div class="campo">
+                <label for="comentarios">¿Por qué?</label>
+                <textarea id="comentarios" name="comentarios" rows="4" class="campo__textarea" placeholder="Escribe tus comentarios aquí..."></textarea>
+            </div>
+
+            <div class="campo">
+                <button type="submit" class="campo_submit">Enviar</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
